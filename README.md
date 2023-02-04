@@ -1,4 +1,6 @@
 ## Topics I have covored
+
+### Basic Setup + User Registration
 - Layout templating with blade engine
 - Route (basic and generic)
 - Create Controller
@@ -12,6 +14,14 @@
 - Password encryption with bcrypt
 - Show error message
 - Preserve submitted data if no error with old() method
+
+### Authentication
+- Set Login route and method 
+- Set login method with Auth()->attempt()
+- Conditional contents for authenticated user
+- Login - logout redirect with success message
+- Login failed redirect with failure message
+- Login immediately after registration
 
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
