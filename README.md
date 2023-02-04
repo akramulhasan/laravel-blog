@@ -1,4 +1,14 @@
-### Learning blade engine
+## Topics I have covored
+- Layout templating with blade engine
+- Route (basic and generic)
+- Create Controller
+- Connect Controller from Route
+- Connect View from Controller
+- Database connection
+- Create a Migration for adding a coulumn in an existing table
+- Run a fresh Migtation with migrate:fresh
+- Submit a form and send data to the table
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
