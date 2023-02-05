@@ -16,13 +16,13 @@ use App\Http\Controllers\UserController;
 */
 
 // User Route
-Route::get('/', [UserController::class, 'correctHomepage']);
-Route::post('/register', [UserController::class, 'register']);
-Route::post('/login', [UserController::class, 'login']);
-Route::post('/logout', [UserController::class, 'logout']);
+Route::get('/', [UserController::class, 'correctHomepage'])->name('login');
+Route::post('/register', [UserController::class, 'register'])->middleware('guest');
+Route::post('/login', [UserController::class, 'login'])->middleware('guest');
+Route::post('/logout', [UserController::class, 'logout'])->middleware('auth');
 
 // Blog Post Route
 
-Route::get('/create-post', [PostController::class, 'createPostForm']);
-Route::post('/create-post', [PostController::class, 'storePost']);
+Route::get('/create-post', [PostController::class, 'createPostForm'])->middleware('MustBeLoggedIn');
+Route::post('/create-post', [PostController::class, 'storePost'])->middleware('auth');
 Route::get('/post/{post}', [PostController::class, 'singlePost']);
