@@ -30,6 +30,7 @@
 - Retrieve the single post from DB
 - Create the DB One to One relationships with foreignID by using belongsTo method
 - Redirect to newly created post page after creating post
+- Custom Middleware
 
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
