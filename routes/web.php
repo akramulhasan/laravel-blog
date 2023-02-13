@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\TicketController;
 
 /*
 |--------------------------------------------------------------------------
@@ -26,3 +27,12 @@ Route::post('/logout', [UserController::class, 'logout'])->middleware('auth');
 Route::get('/create-post', [PostController::class, 'createPostForm'])->middleware('MustBeLoggedIn');
 Route::post('/create-post', [PostController::class, 'storePost'])->middleware('auth');
 Route::get('/post/{post}', [PostController::class, 'singlePost']);
+
+
+// Ticket Route
+Route::get('/create-ticket',[TicketController::class, 'createTicketForm']);
+Route::post('/create-ticket',[TicketController::class, 'storeTicket']);
+Route::get('/ticket/{ticket}', [TicketController::class, 'singleTicket']);
+
+//Profile Route
+Route::get('/profile/{user:username}', [UserController::class, 'profile']);

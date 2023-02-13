@@ -46,4 +46,10 @@ class UserController extends Controller
 
         return redirect('/')->with('success','Thank you for createing account');
     }
+
+    public function profile(User $user){
+        
+        
+        return view('profile-posts',['usernam' => $user->username, 'posts'=>$user->posts()->latest()->get()]);
+    }
 }
