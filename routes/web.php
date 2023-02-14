@@ -27,6 +27,7 @@ Route::post('/logout', [UserController::class, 'logout'])->middleware('auth');
 Route::get('/create-post', [PostController::class, 'createPostForm'])->middleware('MustBeLoggedIn');
 Route::post('/create-post', [PostController::class, 'storePost'])->middleware('auth');
 Route::get('/post/{post}', [PostController::class, 'singlePost']);
+Route::delete('/post/{post}', [PostController::class, 'delete'])->middleware('can:delete,post');
 
 
 // Ticket Route
