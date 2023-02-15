@@ -16,6 +16,12 @@ use App\Http\Controllers\TicketController;
 |
 */
 
+Route::get('/admin-only', function(){
+  
+        return 'This page only for admin users';
+   
+    
+})->middleware('can:visitAdminPages');
 // User Route
 Route::get('/', [UserController::class, 'correctHomepage'])->name('login');
 Route::post('/register', [UserController::class, 'register'])->middleware('guest');
