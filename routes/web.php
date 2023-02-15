@@ -28,6 +28,8 @@ Route::get('/create-post', [PostController::class, 'createPostForm'])->middlewar
 Route::post('/create-post', [PostController::class, 'storePost'])->middleware('auth');
 Route::get('/post/{post}', [PostController::class, 'singlePost']);
 Route::delete('/post/{post}', [PostController::class, 'delete'])->middleware('can:delete,post');
+Route::get('/post/{post}/edit',[PostController::class, 'showEditForm'])->middleware('can:update,post');
+Route::put('/post/{post}',[PostController::class, 'editPost'])->middleware('can:update,post');
 
 
 // Ticket Route
