@@ -3,7 +3,7 @@
         <form action="/post/{{$post->id}}" method="POST">
             @csrf
             @method('PUT')
-            <p><small><strong>&laquo; Back to post permalink</strong></small></p>
+            <p><small><strong><a href="">&laquo; Back to post permalink</a></strong></small></p>
           <div class="form-group">
             <label for="post-title" class="text-muted mb-1"><small>Title</small></label>
             <input value="{{old('title', $post->title)}}" name="title" id="post-title" class="form-control form-control-lg form-control-title" type="text" placeholder="" autocomplete="off" />
