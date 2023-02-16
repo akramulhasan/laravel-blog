@@ -45,3 +45,5 @@ Route::get('/ticket/{ticket}', [TicketController::class, 'singleTicket']);
 
 //Profile Route
 Route::get('/profile/{user:username}', [UserController::class, 'profile']);
+Route::get('/manage-avatar', [UserController::class, 'manageAvatarForm'])->middleware('MustBeLoggedIn');
+Route::post('/manage-avatar', [UserController::class, 'storeAvatar'])->middleware('MustBeLoggedIn');
