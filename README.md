@@ -33,19 +33,19 @@
 - Custom Middleware
 
 ### Profile
--- Profile Route created
--- Show User data in profile page
--- Show Post data in profile page
--- Permission with Policy
--- Use Policy from Controller and Middleware
--- Custom column isAdmin added to users table
--- Apply the logic on Policy file to give an user access to edit and delete others post
--- Apply Gate for Admin Only route
--- Profile Avatar upload
--- Avatar resize with Intervention package
--- Save Avatar on DB
--- Pull Avatar and filter it on User Model
--- Delete old Avatar after upload new one
+- Profile Route created
+- Show User data in profile page
+- Show Post data in profile page
+- Permission with Policy
+- Use Policy from Controller and Middleware
+- Custom column isAdmin added to users table
+- Apply the logic on Policy file to give an user access to edit and delete others post
+- Apply Gate for Admin Only route
+- Profile Avatar upload
+- Avatar resize with Intervention package
+- Save Avatar on DB
+- Pull Avatar and filter it on User Model
+- Delete old Avatar after upload new one
 
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
