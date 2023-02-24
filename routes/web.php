@@ -43,6 +43,10 @@ Route::get('/create-ticket',[TicketController::class, 'createTicketForm']);
 Route::post('/create-ticket',[TicketController::class, 'storeTicket']);
 Route::get('/ticket/{ticket}', [TicketController::class, 'singleTicket']);
 
+//Follow
+Route::post('/create-follow/{user:username}', [FollowController::class, 'createFollow']);
+Route::post('/removeto-follow/{user:username}', [FollowController::class, 'removeFollow']);
+
 //Profile Route
 Route::get('/profile/{user:username}', [UserController::class, 'profile']);
 Route::get('/manage-avatar', [UserController::class, 'manageAvatarForm'])->middleware('MustBeLoggedIn');
